@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.35.1">
+<meta name="crystal_docs.project_version" content="master">
+<meta name="crystal_docs.project_name" content="athena-serializer">
+
+
+
+<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../../js/doc.js"></script>
+
+  <meta name="repository-name" content="athena-serializer">
+  <title>Athena::Serializer::Annotations::ReadOnly - athena-serializer master</title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "../../../";
+  </script>
+</head>
+<body>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="../../../index.html">
+          athena-serializer
+        </a>
+      </h1>
+
+      <span class="project-version">
+        master
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class=" " data-id="athena-serializer/ACF" data-name="acf">
+      <a href="../../../ACF.html">ACF</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/ACFA" data-name="acfa">
+      <a href="../../../ACFA.html">ACFA</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/ASR" data-name="asr">
+      <a href="../../../ASR.html">ASR</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/ASRA" data-name="asra">
+      <a href="../../../ASRA.html">ASRA</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="athena-serializer/Athena" data-name="athena">
+      <a href="../../../Athena.html">Athena</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="athena-serializer/Athena/Config" data-name="athena::config">
+      <a href="../../../Athena/Config.html">Config</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="athena-serializer/Athena/Config/AnnotationConfigurations" data-name="athena::config::annotationconfigurations">
+      <a href="../../../Athena/Config/AnnotationConfigurations.html">AnnotationConfigurations</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-serializer/Athena/Config/AnnotationConfigurations/AnnotationHash" data-name="athena::config::annotationconfigurations::annotationhash">
+      <a href="../../../Athena/Config/AnnotationConfigurations/AnnotationHash.html">AnnotationHash</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Config/AnnotationConfigurations/Classes" data-name="athena::config::annotationconfigurations::classes">
+      <a href="../../../Athena/Config/AnnotationConfigurations/Classes.html">Classes</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Config/AnnotationConfigurations/ConfigurationBase" data-name="athena::config::annotationconfigurations::configurationbase">
+      <a href="../../../Athena/Config/AnnotationConfigurations/ConfigurationBase.html">ConfigurationBase</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="athena-serializer/Athena/Config/Annotations" data-name="athena::config::annotations">
+      <a href="../../../Athena/Config/Annotations.html">Annotations</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-serializer/Athena/Config/Annotations/Resolvable" data-name="athena::config::annotations::resolvable">
+      <a href="../../../Athena/Config/Annotations/Resolvable.html">Resolvable</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Config/Base" data-name="athena::config::base">
+      <a href="../../../Athena/Config/Base.html">Base</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Config/ConfigurationResolver" data-name="athena::config::configurationresolver">
+      <a href="../../../Athena/Config/ConfigurationResolver.html">ConfigurationResolver</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Config/ConfigurationResolverInterface" data-name="athena::config::configurationresolverinterface">
+      <a href="../../../Athena/Config/ConfigurationResolverInterface.html">ConfigurationResolverInterface</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Config/Parameters" data-name="athena::config::parameters">
+      <a href="../../../Athena/Config/Parameters.html">Parameters</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent open current" data-id="athena-serializer/Athena/Serializer" data-name="athena::serializer">
+      <a href="../../../Athena/Serializer.html">Serializer</a>
+      
+        <ul>
+  
+  <li class="parent open current" data-id="athena-serializer/Athena/Serializer/Annotations" data-name="athena::serializer::annotations">
+      <a href="../../../Athena/Serializer/Annotations.html">Annotations</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Annotations/Accessor" data-name="athena::serializer::annotations::accessor">
+      <a href="../../../Athena/Serializer/Annotations/Accessor.html">Accessor</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Annotations/AccessorOrder" data-name="athena::serializer::annotations::accessororder">
+      <a href="../../../Athena/Serializer/Annotations/AccessorOrder.html">AccessorOrder</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Annotations/Discriminator" data-name="athena::serializer::annotations::discriminator">
+      <a href="../../../Athena/Serializer/Annotations/Discriminator.html">Discriminator</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Annotations/Exclude" data-name="athena::serializer::annotations::exclude">
+      <a href="../../../Athena/Serializer/Annotations/Exclude.html">Exclude</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Annotations/ExclusionPolicy" data-name="athena::serializer::annotations::exclusionpolicy">
+      <a href="../../../Athena/Serializer/Annotations/ExclusionPolicy.html">ExclusionPolicy</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Annotations/Expose" data-name="athena::serializer::annotations::expose">
+      <a href="../../../Athena/Serializer/Annotations/Expose.html">Expose</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Annotations/Groups" data-name="athena::serializer::annotations::groups">
+      <a href="../../../Athena/Serializer/Annotations/Groups.html">Groups</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Annotations/IgnoreOnDeserialize" data-name="athena::serializer::annotations::ignoreondeserialize">
+      <a href="../../../Athena/Serializer/Annotations/IgnoreOnDeserialize.html">IgnoreOnDeserialize</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Annotations/IgnoreOnSerialize" data-name="athena::serializer::annotations::ignoreonserialize">
+      <a href="../../../Athena/Serializer/Annotations/IgnoreOnSerialize.html">IgnoreOnSerialize</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Annotations/Name" data-name="athena::serializer::annotations::name">
+      <a href="../../../Athena/Serializer/Annotations/Name.html">Name</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Annotations/PostDeserialize" data-name="athena::serializer::annotations::postdeserialize">
+      <a href="../../../Athena/Serializer/Annotations/PostDeserialize.html">PostDeserialize</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Annotations/PostSerialize" data-name="athena::serializer::annotations::postserialize">
+      <a href="../../../Athena/Serializer/Annotations/PostSerialize.html">PostSerialize</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Annotations/PreSerialize" data-name="athena::serializer::annotations::preserialize">
+      <a href="../../../Athena/Serializer/Annotations/PreSerialize.html">PreSerialize</a>
+      
+    </li>
+  
+  <li class=" current" data-id="athena-serializer/Athena/Serializer/Annotations/ReadOnly" data-name="athena::serializer::annotations::readonly">
+      <a href="../../../Athena/Serializer/Annotations/ReadOnly.html">ReadOnly</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Annotations/Since" data-name="athena::serializer::annotations::since">
+      <a href="../../../Athena/Serializer/Annotations/Since.html">Since</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Annotations/Skip" data-name="athena::serializer::annotations::skip">
+      <a href="../../../Athena/Serializer/Annotations/Skip.html">Skip</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Annotations/SkipWhenEmpty" data-name="athena::serializer::annotations::skipwhenempty">
+      <a href="../../../Athena/Serializer/Annotations/SkipWhenEmpty.html">SkipWhenEmpty</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Annotations/Until" data-name="athena::serializer::annotations::until">
+      <a href="../../../Athena/Serializer/Annotations/Until.html">Until</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Annotations/VirtualProperty" data-name="athena::serializer::annotations::virtualproperty">
+      <a href="../../../Athena/Serializer/Annotations/VirtualProperty.html">VirtualProperty</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Any" data-name="athena::serializer::any">
+      <a href="../../../Athena/Serializer/Any.html">Any</a>
+      
+    </li>
+  
+  <li class="parent " data-id="athena-serializer/Athena/Serializer/Context" data-name="athena::serializer::context">
+      <a href="../../../Athena/Serializer/Context.html">Context</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Context/Direction" data-name="athena::serializer::context::direction">
+      <a href="../../../Athena/Serializer/Context/Direction.html">Direction</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/DeserializationContext" data-name="athena::serializer::deserializationcontext">
+      <a href="../../../Athena/Serializer/DeserializationContext.html">DeserializationContext</a>
+      
+    </li>
+  
+  <li class="parent " data-id="athena-serializer/Athena/Serializer/ExclusionStrategies" data-name="athena::serializer::exclusionstrategies">
+      <a href="../../../Athena/Serializer/ExclusionStrategies.html">ExclusionStrategies</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/ExclusionStrategies/Disjunct" data-name="athena::serializer::exclusionstrategies::disjunct">
+      <a href="../../../Athena/Serializer/ExclusionStrategies/Disjunct.html">Disjunct</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/ExclusionStrategies/ExclusionStrategyInterface" data-name="athena::serializer::exclusionstrategies::exclusionstrategyinterface">
+      <a href="../../../Athena/Serializer/ExclusionStrategies/ExclusionStrategyInterface.html">ExclusionStrategyInterface</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/ExclusionStrategies/Groups" data-name="athena::serializer::exclusionstrategies::groups">
+      <a href="../../../Athena/Serializer/ExclusionStrategies/Groups.html">Groups</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/ExclusionStrategies/Version" data-name="athena::serializer::exclusionstrategies::version">
+      <a href="../../../Athena/Serializer/ExclusionStrategies/Version.html">Version</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Format" data-name="athena::serializer::format">
+      <a href="../../../Athena/Serializer/Format.html">Format</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/InstantiateObjectConstructor" data-name="athena::serializer::instantiateobjectconstructor">
+      <a href="../../../Athena/Serializer/InstantiateObjectConstructor.html">InstantiateObjectConstructor</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Model" data-name="athena::serializer::model">
+      <a href="../../../Athena/Serializer/Model.html">Model</a>
+      
+    </li>
+  
+  <li class="parent " data-id="athena-serializer/Athena/Serializer/Navigators" data-name="athena::serializer::navigators">
+      <a href="../../../Athena/Serializer/Navigators.html">Navigators</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Navigators/DeserializationNavigator" data-name="athena::serializer::navigators::deserializationnavigator">
+      <a href="../../../Athena/Serializer/Navigators/DeserializationNavigator.html">DeserializationNavigator</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Navigators/DeserializationNavigatorInterface" data-name="athena::serializer::navigators::deserializationnavigatorinterface">
+      <a href="../../../Athena/Serializer/Navigators/DeserializationNavigatorInterface.html">DeserializationNavigatorInterface</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Navigators/NavigatorFactory" data-name="athena::serializer::navigators::navigatorfactory">
+      <a href="../../../Athena/Serializer/Navigators/NavigatorFactory.html">NavigatorFactory</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Navigators/NavigatorFactoryInterface" data-name="athena::serializer::navigators::navigatorfactoryinterface">
+      <a href="../../../Athena/Serializer/Navigators/NavigatorFactoryInterface.html">NavigatorFactoryInterface</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Navigators/SerializationNavigator" data-name="athena::serializer::navigators::serializationnavigator">
+      <a href="../../../Athena/Serializer/Navigators/SerializationNavigator.html">SerializationNavigator</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Navigators/SerializationNavigatorInterface" data-name="athena::serializer::navigators::serializationnavigatorinterface">
+      <a href="../../../Athena/Serializer/Navigators/SerializationNavigatorInterface.html">SerializationNavigatorInterface</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/ObjectConstructorInterface" data-name="athena::serializer::objectconstructorinterface">
+      <a href="../../../Athena/Serializer/ObjectConstructorInterface.html">ObjectConstructorInterface</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/PropertyMetadata" data-name="athena::serializer::propertymetadata(ivartype, valuetype, classtype)">
+      <a href="../../../Athena/Serializer/PropertyMetadata.html">PropertyMetadata</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/PropertyMetadataBase" data-name="athena::serializer::propertymetadatabase">
+      <a href="../../../Athena/Serializer/PropertyMetadataBase.html">PropertyMetadataBase</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Serializable" data-name="athena::serializer::serializable">
+      <a href="../../../Athena/Serializer/Serializable.html">Serializable</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/SerializationContext" data-name="athena::serializer::serializationcontext">
+      <a href="../../../Athena/Serializer/SerializationContext.html">SerializationContext</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Serializer" data-name="athena::serializer::serializer">
+      <a href="../../../Athena/Serializer/Serializer.html">Serializer</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/SerializerInterface" data-name="athena::serializer::serializerinterface">
+      <a href="../../../Athena/Serializer/SerializerInterface.html">SerializerInterface</a>
+      
+    </li>
+  
+  <li class="parent " data-id="athena-serializer/Athena/Serializer/Visitors" data-name="athena::serializer::visitors">
+      <a href="../../../Athena/Serializer/Visitors.html">Visitors</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Visitors/DeserializationVisitor" data-name="athena::serializer::visitors::deserializationvisitor">
+      <a href="../../../Athena/Serializer/Visitors/DeserializationVisitor.html">DeserializationVisitor</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Visitors/DeserializationVisitorInterface" data-name="athena::serializer::visitors::deserializationvisitorinterface">
+      <a href="../../../Athena/Serializer/Visitors/DeserializationVisitorInterface.html">DeserializationVisitorInterface</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Visitors/JSONDeserializationVisitor" data-name="athena::serializer::visitors::jsondeserializationvisitor">
+      <a href="../../../Athena/Serializer/Visitors/JSONDeserializationVisitor.html">JSONDeserializationVisitor</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Visitors/JSONSerializationVisitor" data-name="athena::serializer::visitors::jsonserializationvisitor">
+      <a href="../../../Athena/Serializer/Visitors/JSONSerializationVisitor.html">JSONSerializationVisitor</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Visitors/SerializationVisitorInterface" data-name="athena::serializer::visitors::serializationvisitorinterface">
+      <a href="../../../Athena/Serializer/Visitors/SerializationVisitorInterface.html">SerializationVisitorInterface</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Visitors/YAMLDeserializationVisitor" data-name="athena::serializer::visitors::yamldeserializationvisitor">
+      <a href="../../../Athena/Serializer/Visitors/YAMLDeserializationVisitor.html">YAMLDeserializationVisitor</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-serializer/Athena/Serializer/Visitors/YAMLSerializationVisitor" data-name="athena::serializer::visitors::yamlserializationvisitor">
+      <a href="../../../Athena/Serializer/Visitors/YAMLSerializationVisitor.html">YAMLSerializationVisitor</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">annotation</span> Athena::Serializer::Annotations::ReadOnly
+
+</h1>
+
+
+
+
+
+  <h2>
+    <a id="overview" class="anchor" href="#overview">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Overview
+  </h2>
+
+  <p>Indicates that a property is read-only and cannot be set during deserialization.</p>
+
+<h2><a id="example" class="anchor" href="#example">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Example</h2>
+
+<pre><code class="language-crystal"><span class="k">class</span> <span class="t">Example</span>
+  <span class="k">include</span> <span class="t">ASR</span><span class="t">::</span><span class="t">Serializable</span>
+
+  property name : <span class="t">String</span>
+
+  @[<span class="t">ASRA</span><span class="t">::</span><span class="t">ReadOnly</span>]
+  property password : <span class="t">String</span>?
+<span class="k">end</span>
+
+obj <span class="o">=</span> <span class="t">ASR</span>.serializer.deserialize <span class="t">Example</span>, <span class="s">%({&quot;name&quot;:&quot;Fred&quot;,&quot;password&quot;:&quot;password1&quot;})</span>, <span class="n">:json</span>
+
+obj.name     <span class="c"># =&gt; &quot;Fred&quot;</span>
+obj.password <span class="c"># =&gt; nil</span></code></pre>
+
+<p><span class="flag purple">NOTE</span>  The property must be nilable, or have a default value.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      <a href="https://github.com/athena-framework/serializer/blob/ca8e255d78b44bcb5b0255b1f48b4289f6fe39f2/src/annotations.cr#L502" target="_blank">
+        annotations.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="methods-inherited">
+  
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>
